@@ -3,6 +3,7 @@ const fioResultElement = document.getElementById("fio-result");
 const date = document.getElementById("date");
 const commentsElement = document.getElementById("comments");
 const commentsResultElement = document.getElementById("comments-result");
+const containerImg = document.querySelectorAll("container-img");
 const imageElement = document.getElementById("imageResult");
 const button = document.getElementById("button");
 
@@ -17,6 +18,7 @@ button.addEventListener('click', () => {
     fioResultElement.value = name;
     const comments = commentsElement.value;
     commentsResultElement.value = comments;
+    const userImage = imageElement.value;
     document.querySelector ('#img').src = userImage;
 
 })
