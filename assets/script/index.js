@@ -17,6 +17,7 @@ button.addEventListener('click', () => {
     fioResultElement.value = name;
     const comments = commentsElement.value;
     commentsResultElement.value = comments;
+    document.querySelector ('#img').src = userImage;
 
 })
 
