@@ -1,0 +1,31 @@
+.body{
+    background-color: gray;
+}
+.servis{
+    margin-left: 15px;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.button{
+    margin: 10px;
+}
+data{
+    margin-left: 25px;
+}
+.conrainer-fio{
+    display: flex;
+    justify-content: space-around;
+}
+.container-comments{
+    display: flex;
+    justify-content: space-around;
+}
+.container-img{
+    display: flex;
+    justify-content: space-around;
+}
+
