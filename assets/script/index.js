@@ -6,10 +6,10 @@ const commentsResultElement = document.getElementById("comments-result");
 const imageElement = document.getElementById("imageResult");
 const button = document.getElementById("button");
 
-let commentChecked = () => {
-    let checkSpam = comments.replace(/viagra/gi, "***").replace(/xxx/gi, "***");
-    console.log(checkSpam);
-}
+// let commentChecked = () => {
+//     let checkSpam = comments.replace(/viagra/gi, "***").replace(/xxx/gi, "***");
+//     console.log(checkSpam);
+// }
 
 button.addEventListener('click', () => {
     const name = nameElement.value;
