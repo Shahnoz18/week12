@@ -8,20 +8,25 @@ const imageElement = document.getElementById("imageResult");
 const button = document.getElementById("button");
 
 // let commentChecked = () => {
-//     let checkSpam = comments.replace(/viagra/gi, "***").replace(/xxx/gi, "***");
+//     let checkSpam = comments.replace(/\b(viagra|xxx)\b/gmi);
 //     console.log(checkSpam);
 // }
 
 button.addEventListener('click', () => {
     const name = nameElement.value;
     // console.log(name); -проверка в консоли 
-    fioResultElement.value = name;
-    const comments = commentsElement.value;
+    let nameElementChaked = name.trim();
+    nameElementChaked = nameElementChaked.toLowerCase();
+    // nameElementChaked = nameElementChaked[0].toUpperCase() + nameElementChaked.slice(1);
+    fioResultElement.value = nameElementChaked;
+    let comments = commentsElement.value;
+    const userImage = date.value;
+    document.querySelector('#img').src = userImage;
+    let commentChecked = () => {
+        comments = comments.replaceAll(/\b(viagra|xxx)\b/gmi, "***");
+        return comments;
+    }
+    commentChecked();
     commentsResultElement.value = comments;
-    const userImage = imageElement.value;
-    document.querySelector ('#img').src = userImage;
-
-})
-
-// let nameElementChaked = nameElement.trim(); //проверка на пробелы
+});
 
