@@ -15,12 +15,6 @@ const imageElement = document.getElementById("imageResult");
 //выбираем элемент с ID "imageResult"
 const button = document.getElementById("button");
 
-// let commentChecked = () => {
-//     let checkSpam = comments.replace(/\b(viagra|xxx)\b/gmi);
-//     console.log(checkSpam);
-// }
-
-
 // при клике на кнопку ....
 button.addEventListener('click', () => {
     const name = nameElement.value;
